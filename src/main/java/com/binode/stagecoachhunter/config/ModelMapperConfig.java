@@ -1,4 +1,4 @@
-package com.binode.stagecoachhunter.otherconfig;
+package com.binode.stagecoachhunter.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.binode.stagecoachhunter.securityConfig;
+package com.binode.stagecoachhunter.config.securityConfig;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

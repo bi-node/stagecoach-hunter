@@ -1,4 +1,4 @@
-package com.binode.stagecoachhunter.securityConfig;
+package com.binode.stagecoachhunter.config.securityConfig;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

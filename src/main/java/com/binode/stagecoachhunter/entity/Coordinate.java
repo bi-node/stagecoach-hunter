@@ -7,7 +7,10 @@ import lombok.*;
 
 @Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity (name="coordinates")
+@Builder
 public class Coordinate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,13 +18,7 @@ public class Coordinate {
     private int x;
     private int y;
 
-    public Coordinate() {
-    }
+    private String addressName;
 
-    public Coordinate(int coOrdinateId, int x, int y) {
-        this.coOrdinateId = coOrdinateId;
-        this.x = x;
-        this.y = y;
-    }
 
 }

@@ -45,9 +45,8 @@ public class User implements UserDetails {
 
     private String reputation;
 
-    private double balance;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Coordinate location;
 
 
