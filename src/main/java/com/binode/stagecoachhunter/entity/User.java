@@ -45,9 +45,7 @@ public class User implements UserDetails {
 
     private String reputation;
 
-
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Coordinate location;
+    private int locationId;
 
 
     @Override

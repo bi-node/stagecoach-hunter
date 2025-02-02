@@ -21,6 +21,6 @@ public class UserDto {
     private String firstname;
     private String lastname;
     private String email;
-    private Coordinate location;
+    private int locationId;
     private UserRole role;
 }

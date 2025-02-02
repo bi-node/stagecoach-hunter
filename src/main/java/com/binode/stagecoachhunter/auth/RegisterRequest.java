@@ -17,7 +17,7 @@ public class RegisterRequest {
     private String lastname;
     private String email;
     private String password;
-    private Coordinate location;
+    private int locationId;
     private UserRole role;
 
 

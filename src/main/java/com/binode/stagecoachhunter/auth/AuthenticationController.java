@@ -1,6 +1,6 @@
 package com.binode.stagecoachhunter.auth;
 
-import lombok.RequiredArgsConstructor;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,9 @@ public class AuthenticationController {
         this.service = service;
     }
 
+
     @PostMapping("/register")
+    @Tag(name = "post", description = "Post method for User Registration on Authentication API")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request) {
         return ResponseEntity.ok(service.register(request));
     }

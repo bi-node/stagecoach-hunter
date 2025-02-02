@@ -20,11 +20,9 @@ public class RideRequest {
     @OneToOne
     private User requester;
 
-    @OneToOne
-    private Coordinate pickupLocation;
+    private int pickUpLocationId;
 
-    @OneToOne
-    private Coordinate dropOffLocation;
+    private int dropOffLocationId;
 
     @Enumerated(EnumType.STRING)
     private StagecoachType stagecoachType;
